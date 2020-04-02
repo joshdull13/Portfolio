@@ -1,4 +1,4 @@
-* ECE 201
+# ECE 201
 	
 	The following files are labs created for ECE 201 in Intel Quartus Prime 18.1 for the DE10-Lite Board.
 	Files are separated into parts as defined by the lab

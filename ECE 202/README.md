@@ -1,4 +1,4 @@
-* ECE 202
+# ECE 202
 	
 	The following files are labs created for ECE 202 in Keil uVision5 for the Cortex-M4 STM32L476VGTx
 
