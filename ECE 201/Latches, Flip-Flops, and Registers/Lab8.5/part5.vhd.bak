@@ -1,0 +1,42 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all;
+ENTITY part5 IS
+	PORT ( 	A, B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+				D, Clk : IN STD_LOGIC;
+				Sum : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+				HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6
+				: OUT STD_LOGIC_VECTOR(0 TO 6);
+				Qa, Qb, Qc, carryOut : OUT STD_LOGIC);
+END part5;
+
+ARCHITECTURE Behavior OF part5 IS
+	SIGNAL posM, negM : STD_LOGIC;
+BEGIN
+
+	PROCESS ( D, Clk )
+	BEGIN
+		IF Clk = '1' THEN
+			Qa <= D;
+		END IF;
+	END PROCESS;
+	
+	PROCESS ( D, Clk)
+	BEGIN
+		IF Clk = '0' THEN
+			posM <= D;
+		ELSIF Clk = '1' THEN
+			Qb <= posM;
+		END IF;
+	END PROCESS;
+	
+	PROCESS ( D, Clk)
+	BEGIN
+		IF Clk = '1' THEN
+			negM <= D;
+		ELSIF Clk = '0' THEN
+			Qc <= negM;
+		END IF;
+	END PROCESS;
+		
+	
+END Behavior;

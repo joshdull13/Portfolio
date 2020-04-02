@@ -1,0 +1,898 @@
+$comment
+	File created using the following command:
+		vcd file part1.msim.vcd -direction
+$end
+$date
+	Sun Nov 17 22:19:21 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module part1_vhd_vec_tst $end
+$var wire 1 ! CLOCK_50 $end
+$var wire 1 " HEX0 [0] $end
+$var wire 1 # HEX0 [1] $end
+$var wire 1 $ HEX0 [2] $end
+$var wire 1 % HEX0 [3] $end
+$var wire 1 & HEX0 [4] $end
+$var wire 1 ' HEX0 [5] $end
+$var wire 1 ( HEX0 [6] $end
+$var wire 1 ) HEX1 [0] $end
+$var wire 1 * HEX1 [1] $end
+$var wire 1 + HEX1 [2] $end
+$var wire 1 , HEX1 [3] $end
+$var wire 1 - HEX1 [4] $end
+$var wire 1 . HEX1 [5] $end
+$var wire 1 / HEX1 [6] $end
+$var wire 1 0 key $end
+$var wire 1 1 Qout [7] $end
+$var wire 1 2 Qout [6] $end
+$var wire 1 3 Qout [5] $end
+$var wire 1 4 Qout [4] $end
+$var wire 1 5 Qout [3] $end
+$var wire 1 6 Qout [2] $end
+$var wire 1 7 Qout [1] $end
+$var wire 1 8 Qout [0] $end
+$var wire 1 9 SW0 $end
+$var wire 1 : SW1 $end
+
+$scope module i1 $end
+$var wire 1 ; gnd $end
+$var wire 1 < vcc $end
+$var wire 1 = unknown $end
+$var wire 1 > devoe $end
+$var wire 1 ? devclrn $end
+$var wire 1 @ devpor $end
+$var wire 1 A ww_devoe $end
+$var wire 1 B ww_devclrn $end
+$var wire 1 C ww_devpor $end
+$var wire 1 D ww_key $end
+$var wire 1 E ww_SW0 $end
+$var wire 1 F ww_SW1 $end
+$var wire 1 G ww_CLOCK_50 $end
+$var wire 1 H ww_HEX0 [0] $end
+$var wire 1 I ww_HEX0 [1] $end
+$var wire 1 J ww_HEX0 [2] $end
+$var wire 1 K ww_HEX0 [3] $end
+$var wire 1 L ww_HEX0 [4] $end
+$var wire 1 M ww_HEX0 [5] $end
+$var wire 1 N ww_HEX0 [6] $end
+$var wire 1 O ww_HEX1 [0] $end
+$var wire 1 P ww_HEX1 [1] $end
+$var wire 1 Q ww_HEX1 [2] $end
+$var wire 1 R ww_HEX1 [3] $end
+$var wire 1 S ww_HEX1 [4] $end
+$var wire 1 T ww_HEX1 [5] $end
+$var wire 1 U ww_HEX1 [6] $end
+$var wire 1 V ww_Qout [7] $end
+$var wire 1 W ww_Qout [6] $end
+$var wire 1 X ww_Qout [5] $end
+$var wire 1 Y ww_Qout [4] $end
+$var wire 1 Z ww_Qout [3] $end
+$var wire 1 [ ww_Qout [2] $end
+$var wire 1 \ ww_Qout [1] $end
+$var wire 1 ] ww_Qout [0] $end
+$var wire 1 ^ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [4] $end
+$var wire 1 _ \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [3] $end
+$var wire 1 ` \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [2] $end
+$var wire 1 a \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [1] $end
+$var wire 1 b \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ [0] $end
+$var wire 1 c \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [4] $end
+$var wire 1 d \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [3] $end
+$var wire 1 e \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [2] $end
+$var wire 1 f \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [1] $end
+$var wire 1 g \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ [0] $end
+$var wire 1 h \CLKDB0|result~clkctrl_INCLK_bus\ [3] $end
+$var wire 1 i \CLKDB0|result~clkctrl_INCLK_bus\ [2] $end
+$var wire 1 j \CLKDB0|result~clkctrl_INCLK_bus\ [1] $end
+$var wire 1 k \CLKDB0|result~clkctrl_INCLK_bus\ [0] $end
+$var wire 1 l \CLOCK_50~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 m \CLOCK_50~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 n \CLOCK_50~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 o \CLOCK_50~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 p \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 q \~QUARTUS_CREATED_UNVM~~busy\ $end
+$var wire 1 r \~QUARTUS_CREATED_ADC1~~eoc\ $end
+$var wire 1 s \~QUARTUS_CREATED_ADC2~~eoc\ $end
+$var wire 1 t \HEX0[6]~output_o\ $end
+$var wire 1 u \HEX0[5]~output_o\ $end
+$var wire 1 v \HEX0[4]~output_o\ $end
+$var wire 1 w \HEX0[3]~output_o\ $end
+$var wire 1 x \HEX0[2]~output_o\ $end
+$var wire 1 y \HEX0[1]~output_o\ $end
+$var wire 1 z \HEX0[0]~output_o\ $end
+$var wire 1 { \HEX1[6]~output_o\ $end
+$var wire 1 | \HEX1[5]~output_o\ $end
+$var wire 1 } \HEX1[4]~output_o\ $end
+$var wire 1 ~ \HEX1[3]~output_o\ $end
+$var wire 1 !! \HEX1[2]~output_o\ $end
+$var wire 1 "! \HEX1[1]~output_o\ $end
+$var wire 1 #! \HEX1[0]~output_o\ $end
+$var wire 1 $! \Qout[0]~output_o\ $end
+$var wire 1 %! \Qout[1]~output_o\ $end
+$var wire 1 &! \Qout[2]~output_o\ $end
+$var wire 1 '! \Qout[3]~output_o\ $end
+$var wire 1 (! \Qout[4]~output_o\ $end
+$var wire 1 )! \Qout[5]~output_o\ $end
+$var wire 1 *! \Qout[6]~output_o\ $end
+$var wire 1 +! \Qout[7]~output_o\ $end
+$var wire 1 ,! \CLOCK_50~input_o\ $end
+$var wire 1 -! \CLOCK_50~inputclkctrl_outclk\ $end
+$var wire 1 .! \key~input_o\ $end
+$var wire 1 /! \CLKDB0|flipflops[0]~feeder_combout\ $end
+$var wire 1 0! \CLKDB0|flipflops[1]~feeder_combout\ $end
+$var wire 1 1! \CLKDB0|count[0]~19_combout\ $end
+$var wire 1 2! \CLKDB0|counter_set~combout\ $end
+$var wire 1 3! \CLKDB0|result~2_combout\ $end
+$var wire 1 4! \CLKDB0|result~1_combout\ $end
+$var wire 1 5! \CLKDB0|result~3_combout\ $end
+$var wire 1 6! \CLKDB0|result~4_combout\ $end
+$var wire 1 7! \CLKDB0|result~6_combout\ $end
+$var wire 1 8! \CLKDB0|count[0]~20\ $end
+$var wire 1 9! \CLKDB0|count[1]~21_combout\ $end
+$var wire 1 :! \CLKDB0|count[1]~22\ $end
+$var wire 1 ;! \CLKDB0|count[2]~23_combout\ $end
+$var wire 1 <! \CLKDB0|count[2]~24\ $end
+$var wire 1 =! \CLKDB0|count[3]~25_combout\ $end
+$var wire 1 >! \CLKDB0|count[3]~26\ $end
+$var wire 1 ?! \CLKDB0|count[4]~27_combout\ $end
+$var wire 1 @! \CLKDB0|count[4]~28\ $end
+$var wire 1 A! \CLKDB0|count[5]~29_combout\ $end
+$var wire 1 B! \CLKDB0|count[5]~30\ $end
+$var wire 1 C! \CLKDB0|count[6]~31_combout\ $end
+$var wire 1 D! \CLKDB0|count[6]~32\ $end
+$var wire 1 E! \CLKDB0|count[7]~33_combout\ $end
+$var wire 1 F! \CLKDB0|count[7]~34\ $end
+$var wire 1 G! \CLKDB0|count[8]~35_combout\ $end
+$var wire 1 H! \CLKDB0|count[8]~36\ $end
+$var wire 1 I! \CLKDB0|count[9]~37_combout\ $end
+$var wire 1 J! \CLKDB0|count[9]~38\ $end
+$var wire 1 K! \CLKDB0|count[10]~39_combout\ $end
+$var wire 1 L! \CLKDB0|count[10]~40\ $end
+$var wire 1 M! \CLKDB0|count[11]~41_combout\ $end
+$var wire 1 N! \CLKDB0|count[11]~42\ $end
+$var wire 1 O! \CLKDB0|count[12]~43_combout\ $end
+$var wire 1 P! \CLKDB0|count[12]~44\ $end
+$var wire 1 Q! \CLKDB0|count[13]~45_combout\ $end
+$var wire 1 R! \CLKDB0|count[13]~46\ $end
+$var wire 1 S! \CLKDB0|count[14]~47_combout\ $end
+$var wire 1 T! \CLKDB0|count[14]~48\ $end
+$var wire 1 U! \CLKDB0|count[15]~49_combout\ $end
+$var wire 1 V! \CLKDB0|count[15]~50\ $end
+$var wire 1 W! \CLKDB0|count[16]~51_combout\ $end
+$var wire 1 X! \CLKDB0|count[16]~52\ $end
+$var wire 1 Y! \CLKDB0|count[17]~53_combout\ $end
+$var wire 1 Z! \CLKDB0|count[17]~54\ $end
+$var wire 1 [! \CLKDB0|count[18]~55_combout\ $end
+$var wire 1 \! \CLKDB0|result~0_combout\ $end
+$var wire 1 ]! \CLKDB0|result~5_combout\ $end
+$var wire 1 ^! \CLKDB0|result~feeder_combout\ $end
+$var wire 1 _! \CLKDB0|result~q\ $end
+$var wire 1 `! \CLKDB0|result~clkctrl_outclk\ $end
+$var wire 1 a! \SW1~input_o\ $end
+$var wire 1 b! \CLKDB2|flipflops[0]~feeder_combout\ $end
+$var wire 1 c! \CLKDB2|flipflops[1]~feeder_combout\ $end
+$var wire 1 d! \CLKDB2|count[0]~19_combout\ $end
+$var wire 1 e! \CLKDB2|counter_set~combout\ $end
+$var wire 1 f! \CLKDB2|count[0]~20\ $end
+$var wire 1 g! \CLKDB2|count[1]~21_combout\ $end
+$var wire 1 h! \CLKDB2|count[1]~22\ $end
+$var wire 1 i! \CLKDB2|count[2]~23_combout\ $end
+$var wire 1 j! \CLKDB2|count[2]~24\ $end
+$var wire 1 k! \CLKDB2|count[3]~25_combout\ $end
+$var wire 1 l! \CLKDB2|count[3]~26\ $end
+$var wire 1 m! \CLKDB2|count[4]~27_combout\ $end
+$var wire 1 n! \CLKDB2|count[4]~28\ $end
+$var wire 1 o! \CLKDB2|count[5]~29_combout\ $end
+$var wire 1 p! \CLKDB2|count[5]~30\ $end
+$var wire 1 q! \CLKDB2|count[6]~31_combout\ $end
+$var wire 1 r! \CLKDB2|count[6]~32\ $end
+$var wire 1 s! \CLKDB2|count[7]~33_combout\ $end
+$var wire 1 t! \CLKDB2|count[7]~34\ $end
+$var wire 1 u! \CLKDB2|count[8]~35_combout\ $end
+$var wire 1 v! \CLKDB2|count[8]~36\ $end
+$var wire 1 w! \CLKDB2|count[9]~37_combout\ $end
+$var wire 1 x! \CLKDB2|count[9]~38\ $end
+$var wire 1 y! \CLKDB2|count[10]~39_combout\ $end
+$var wire 1 z! \CLKDB2|count[10]~40\ $end
+$var wire 1 {! \CLKDB2|count[11]~41_combout\ $end
+$var wire 1 |! \CLKDB2|count[11]~42\ $end
+$var wire 1 }! \CLKDB2|count[12]~43_combout\ $end
+$var wire 1 ~! \CLKDB2|count[12]~44\ $end
+$var wire 1 !" \CLKDB2|count[13]~45_combout\ $end
+$var wire 1 "" \CLKDB2|count[13]~46\ $end
+$var wire 1 #" \CLKDB2|count[14]~47_combout\ $end
+$var wire 1 $" \CLKDB2|count[14]~48\ $end
+$var wire 1 %" \CLKDB2|count[15]~49_combout\ $end
+$var wire 1 &" \CLKDB2|count[15]~50\ $end
+$var wire 1 '" \CLKDB2|count[16]~51_combout\ $end
+$var wire 1 (" \CLKDB2|count[16]~52\ $end
+$var wire 1 )" \CLKDB2|count[17]~53_combout\ $end
+$var wire 1 *" \CLKDB2|count[17]~54\ $end
+$var wire 1 +" \CLKDB2|count[18]~55_combout\ $end
+$var wire 1 ," \CLKDB2|result~0_combout\ $end
+$var wire 1 -" \CLKDB2|result~2_combout\ $end
+$var wire 1 ." \CLKDB2|result~1_combout\ $end
+$var wire 1 /" \CLKDB2|result~3_combout\ $end
+$var wire 1 0" \CLKDB2|result~4_combout\ $end
+$var wire 1 1" \CLKDB2|result~5_combout\ $end
+$var wire 1 2" \CLKDB2|result~q\ $end
+$var wire 1 3" \Tff0|Qa~0_combout\ $end
+$var wire 1 4" \SW0~input_o\ $end
+$var wire 1 5" \CLKDB1|flipflops[0]~feeder_combout\ $end
+$var wire 1 6" \CLKDB1|flipflops[1]~feeder_combout\ $end
+$var wire 1 7" \CLKDB1|counter_set~combout\ $end
+$var wire 1 8" \CLKDB1|count[0]~19_combout\ $end
+$var wire 1 9" \CLKDB1|count[0]~20\ $end
+$var wire 1 :" \CLKDB1|count[1]~21_combout\ $end
+$var wire 1 ;" \CLKDB1|count[1]~22\ $end
+$var wire 1 <" \CLKDB1|count[2]~23_combout\ $end
+$var wire 1 =" \CLKDB1|count[2]~24\ $end
+$var wire 1 >" \CLKDB1|count[3]~25_combout\ $end
+$var wire 1 ?" \CLKDB1|count[3]~26\ $end
+$var wire 1 @" \CLKDB1|count[4]~27_combout\ $end
+$var wire 1 A" \CLKDB1|count[4]~28\ $end
+$var wire 1 B" \CLKDB1|count[5]~29_combout\ $end
+$var wire 1 C" \CLKDB1|count[5]~30\ $end
+$var wire 1 D" \CLKDB1|count[6]~31_combout\ $end
+$var wire 1 E" \CLKDB1|count[6]~32\ $end
+$var wire 1 F" \CLKDB1|count[7]~33_combout\ $end
+$var wire 1 G" \CLKDB1|count[7]~34\ $end
+$var wire 1 H" \CLKDB1|count[8]~35_combout\ $end
+$var wire 1 I" \CLKDB1|count[8]~36\ $end
+$var wire 1 J" \CLKDB1|count[9]~37_combout\ $end
+$var wire 1 K" \CLKDB1|count[9]~38\ $end
+$var wire 1 L" \CLKDB1|count[10]~39_combout\ $end
+$var wire 1 M" \CLKDB1|count[10]~40\ $end
+$var wire 1 N" \CLKDB1|count[11]~41_combout\ $end
+$var wire 1 O" \CLKDB1|count[11]~42\ $end
+$var wire 1 P" \CLKDB1|count[12]~43_combout\ $end
+$var wire 1 Q" \CLKDB1|count[12]~44\ $end
+$var wire 1 R" \CLKDB1|count[13]~45_combout\ $end
+$var wire 1 S" \CLKDB1|count[13]~feeder_combout\ $end
+$var wire 1 T" \CLKDB1|count[13]~46\ $end
+$var wire 1 U" \CLKDB1|count[14]~47_combout\ $end
+$var wire 1 V" \CLKDB1|count[14]~48\ $end
+$var wire 1 W" \CLKDB1|count[15]~49_combout\ $end
+$var wire 1 X" \CLKDB1|count[15]~50\ $end
+$var wire 1 Y" \CLKDB1|count[16]~51_combout\ $end
+$var wire 1 Z" \CLKDB1|count[16]~52\ $end
+$var wire 1 [" \CLKDB1|count[17]~53_combout\ $end
+$var wire 1 \" \CLKDB1|count[17]~54\ $end
+$var wire 1 ]" \CLKDB1|count[18]~55_combout\ $end
+$var wire 1 ^" \CLKDB1|result~0_combout\ $end
+$var wire 1 _" \CLKDB1|result~1_combout\ $end
+$var wire 1 `" \CLKDB1|result~2_combout\ $end
+$var wire 1 a" \CLKDB1|result~3_combout\ $end
+$var wire 1 b" \CLKDB1|result~4_combout\ $end
+$var wire 1 c" \CLKDB1|result~5_combout\ $end
+$var wire 1 d" \CLKDB1|result~feeder_combout\ $end
+$var wire 1 e" \CLKDB1|result~q\ $end
+$var wire 1 f" \Tff0|Qa~q\ $end
+$var wire 1 g" \Tff1|Qa~0_combout\ $end
+$var wire 1 h" \Tff1|Qa~q\ $end
+$var wire 1 i" \Tff2|Qa~0_combout\ $end
+$var wire 1 j" \Tff2|Qa~q\ $end
+$var wire 1 k" \Tff3|Qa~0_combout\ $end
+$var wire 1 l" \Tff3|Qa~q\ $end
+$var wire 1 m" \bth|bth0|HEX[5]~0_combout\ $end
+$var wire 1 n" \bth|bth0|HEX[4]~1_combout\ $end
+$var wire 1 o" \bth|bth0|HEX[3]~2_combout\ $end
+$var wire 1 p" \bth|bth0|HEX[2]~3_combout\ $end
+$var wire 1 q" \bth|bth0|HEX[1]~4_combout\ $end
+$var wire 1 r" \bth|bth0|HEX[0]~5_combout\ $end
+$var wire 1 s" \Tff4|Qa~0_combout\ $end
+$var wire 1 t" \Tff4|Qa~q\ $end
+$var wire 1 u" \Tff5|Qa~0_combout\ $end
+$var wire 1 v" \Tff5|Qa~q\ $end
+$var wire 1 w" \Tff6|Qa~0_combout\ $end
+$var wire 1 x" \Tff6|Qa~q\ $end
+$var wire 1 y" \Tff7|Qa~0_combout\ $end
+$var wire 1 z" \Tff7|Qa~1_combout\ $end
+$var wire 1 {" \Tff7|Qa~q\ $end
+$var wire 1 |" \bth|bth1|HEX[5]~0_combout\ $end
+$var wire 1 }" \bth|bth1|HEX[4]~1_combout\ $end
+$var wire 1 ~" \bth|bth1|HEX[3]~2_combout\ $end
+$var wire 1 !# \bth|bth1|HEX[2]~3_combout\ $end
+$var wire 1 "# \bth|bth1|HEX[1]~4_combout\ $end
+$var wire 1 ## \bth|bth1|HEX[0]~5_combout\ $end
+$var wire 1 $# \bth|bth1|HEX\ [0] $end
+$var wire 1 %# \bth|bth1|HEX\ [1] $end
+$var wire 1 &# \bth|bth1|HEX\ [2] $end
+$var wire 1 '# \bth|bth1|HEX\ [3] $end
+$var wire 1 (# \bth|bth1|HEX\ [4] $end
+$var wire 1 )# \bth|bth1|HEX\ [5] $end
+$var wire 1 *# \bth|bth1|HEX\ [6] $end
+$var wire 1 +# \CLKDB2|count\ [18] $end
+$var wire 1 ,# \CLKDB2|count\ [17] $end
+$var wire 1 -# \CLKDB2|count\ [16] $end
+$var wire 1 .# \CLKDB2|count\ [15] $end
+$var wire 1 /# \CLKDB2|count\ [14] $end
+$var wire 1 0# \CLKDB2|count\ [13] $end
+$var wire 1 1# \CLKDB2|count\ [12] $end
+$var wire 1 2# \CLKDB2|count\ [11] $end
+$var wire 1 3# \CLKDB2|count\ [10] $end
+$var wire 1 4# \CLKDB2|count\ [9] $end
+$var wire 1 5# \CLKDB2|count\ [8] $end
+$var wire 1 6# \CLKDB2|count\ [7] $end
+$var wire 1 7# \CLKDB2|count\ [6] $end
+$var wire 1 8# \CLKDB2|count\ [5] $end
+$var wire 1 9# \CLKDB2|count\ [4] $end
+$var wire 1 :# \CLKDB2|count\ [3] $end
+$var wire 1 ;# \CLKDB2|count\ [2] $end
+$var wire 1 <# \CLKDB2|count\ [1] $end
+$var wire 1 =# \CLKDB2|count\ [0] $end
+$var wire 1 ># \CLKDB0|count\ [18] $end
+$var wire 1 ?# \CLKDB0|count\ [17] $end
+$var wire 1 @# \CLKDB0|count\ [16] $end
+$var wire 1 A# \CLKDB0|count\ [15] $end
+$var wire 1 B# \CLKDB0|count\ [14] $end
+$var wire 1 C# \CLKDB0|count\ [13] $end
+$var wire 1 D# \CLKDB0|count\ [12] $end
+$var wire 1 E# \CLKDB0|count\ [11] $end
+$var wire 1 F# \CLKDB0|count\ [10] $end
+$var wire 1 G# \CLKDB0|count\ [9] $end
+$var wire 1 H# \CLKDB0|count\ [8] $end
+$var wire 1 I# \CLKDB0|count\ [7] $end
+$var wire 1 J# \CLKDB0|count\ [6] $end
+$var wire 1 K# \CLKDB0|count\ [5] $end
+$var wire 1 L# \CLKDB0|count\ [4] $end
+$var wire 1 M# \CLKDB0|count\ [3] $end
+$var wire 1 N# \CLKDB0|count\ [2] $end
+$var wire 1 O# \CLKDB0|count\ [1] $end
+$var wire 1 P# \CLKDB0|count\ [0] $end
+$var wire 1 Q# \CLKDB1|count\ [18] $end
+$var wire 1 R# \CLKDB1|count\ [17] $end
+$var wire 1 S# \CLKDB1|count\ [16] $end
+$var wire 1 T# \CLKDB1|count\ [15] $end
+$var wire 1 U# \CLKDB1|count\ [14] $end
+$var wire 1 V# \CLKDB1|count\ [13] $end
+$var wire 1 W# \CLKDB1|count\ [12] $end
+$var wire 1 X# \CLKDB1|count\ [11] $end
+$var wire 1 Y# \CLKDB1|count\ [10] $end
+$var wire 1 Z# \CLKDB1|count\ [9] $end
+$var wire 1 [# \CLKDB1|count\ [8] $end
+$var wire 1 \# \CLKDB1|count\ [7] $end
+$var wire 1 ]# \CLKDB1|count\ [6] $end
+$var wire 1 ^# \CLKDB1|count\ [5] $end
+$var wire 1 _# \CLKDB1|count\ [4] $end
+$var wire 1 `# \CLKDB1|count\ [3] $end
+$var wire 1 a# \CLKDB1|count\ [2] $end
+$var wire 1 b# \CLKDB1|count\ [1] $end
+$var wire 1 c# \CLKDB1|count\ [0] $end
+$var wire 1 d# \CLKDB1|flipflops\ [1] $end
+$var wire 1 e# \CLKDB1|flipflops\ [0] $end
+$var wire 1 f# \bth|bth0|HEX\ [0] $end
+$var wire 1 g# \bth|bth0|HEX\ [1] $end
+$var wire 1 h# \bth|bth0|HEX\ [2] $end
+$var wire 1 i# \bth|bth0|HEX\ [3] $end
+$var wire 1 j# \bth|bth0|HEX\ [4] $end
+$var wire 1 k# \bth|bth0|HEX\ [5] $end
+$var wire 1 l# \bth|bth0|HEX\ [6] $end
+$var wire 1 m# \CLKDB0|flipflops\ [1] $end
+$var wire 1 n# \CLKDB0|flipflops\ [0] $end
+$var wire 1 o# T [7] $end
+$var wire 1 p# T [6] $end
+$var wire 1 q# T [5] $end
+$var wire 1 r# T [4] $end
+$var wire 1 s# T [3] $end
+$var wire 1 t# T [2] $end
+$var wire 1 u# T [1] $end
+$var wire 1 v# T [0] $end
+$var wire 1 w# \CLKDB2|flipflops\ [1] $end
+$var wire 1 x# \CLKDB2|flipflops\ [0] $end
+$var wire 1 y# \CLKDB1|ALT_INV_result~q\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+00
+09
+0:
+0;
+1<
+x=
+1>
+1?
+1@
+1A
+1B
+1C
+0D
+0E
+0F
+xG
+0p
+zq
+zr
+zs
+1t
+0u
+0v
+0w
+0x
+0y
+0z
+1{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+x,!
+x-!
+0.!
+0/!
+00!
+11!
+02!
+13!
+14!
+15!
+16!
+17!
+08!
+09!
+1:!
+0;!
+0<!
+0=!
+1>!
+0?!
+0@!
+0A!
+1B!
+0C!
+0D!
+0E!
+1F!
+0G!
+0H!
+0I!
+1J!
+0K!
+0L!
+0M!
+1N!
+0O!
+0P!
+0Q!
+1R!
+0S!
+0T!
+0U!
+1V!
+0W!
+0X!
+0Y!
+1Z!
+0[!
+1\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+1d!
+0e!
+0f!
+0g!
+1h!
+0i!
+0j!
+0k!
+1l!
+0m!
+0n!
+0o!
+1p!
+0q!
+0r!
+0s!
+1t!
+0u!
+0v!
+0w!
+1x!
+0y!
+0z!
+0{!
+1|!
+0}!
+0~!
+0!"
+1""
+0#"
+0$"
+0%"
+1&"
+0'"
+0("
+0)"
+1*"
+0+"
+1,"
+1-"
+1."
+0/"
+10"
+01"
+02"
+03"
+04"
+05"
+06"
+07"
+18"
+09"
+0:"
+1;"
+0<"
+0="
+0>"
+1?"
+0@"
+0A"
+0B"
+1C"
+0D"
+0E"
+0F"
+1G"
+0H"
+0I"
+0J"
+1K"
+0L"
+0M"
+0N"
+1O"
+0P"
+0Q"
+0R"
+0S"
+1T"
+0U"
+0V"
+0W"
+1X"
+0Y"
+0Z"
+0["
+1\"
+0]"
+1^"
+1_"
+1`"
+0a"
+1b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+0m"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+1y"
+0z"
+0{"
+0|"
+0}"
+0~"
+0!#
+0"#
+0##
+1y#
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+0P
+0Q
+0R
+0S
+0T
+1U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+x$#
+x%#
+x&#
+x'#
+x(#
+x)#
+1*#
+0+#
+0,#
+0-#
+0.#
+0/#
+00#
+01#
+02#
+03#
+04#
+05#
+06#
+07#
+08#
+09#
+0:#
+0;#
+0<#
+0=#
+0>#
+0?#
+0@#
+0A#
+0B#
+0C#
+0D#
+0E#
+0F#
+0G#
+0H#
+0I#
+0J#
+0K#
+0L#
+0M#
+0N#
+0O#
+0P#
+0Q#
+0R#
+0S#
+0T#
+0U#
+0V#
+0W#
+0X#
+0Y#
+0Z#
+0[#
+0\#
+0]#
+0^#
+0_#
+0`#
+0a#
+0b#
+0c#
+0d#
+0e#
+xf#
+xg#
+xh#
+xi#
+xj#
+xk#
+1l#
+0m#
+0n#
+xo#
+0p#
+xq#
+xr#
+0s#
+xt#
+xu#
+xv#
+0w#
+0x#
+1l
+1m
+1n
+xo
+1h
+1i
+1j
+0k
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0"
+0#
+0$
+0%
+0&
+0'
+1(
+0)
+0*
+0+
+0,
+0-
+0.
+1/
+01
+02
+03
+04
+05
+06
+07
+08
+$end
+#40000
+10
+1D
+1.!
+1/!
+#80000
+00
+1:
+0D
+1F
+1a!
+0.!
+0/!
+1b!
+#120000
+10
+1D
+1.!
+1/!
+#160000
+00
+0D
+0.!
+0/!
+#200000
+10
+1D
+1.!
+1/!
+#240000
+00
+0D
+0.!
+0/!
+#280000
+10
+1D
+1.!
+1/!
+#320000
+00
+0D
+0.!
+0/!
+#360000
+10
+1D
+1.!
+1/!
+#400000
+00
+0D
+0.!
+0/!
+#440000
+10
+1D
+1.!
+1/!
+#480000
+00
+0D
+0.!
+0/!
+#520000
+10
+1D
+1.!
+1/!
+#560000
+00
+0D
+0.!
+0/!
+#600000
+10
+1D
+1.!
+1/!
+#640000
+00
+19
+0D
+1E
+14"
+0.!
+0/!
+15"
+#680000
+10
+1D
+1.!
+1/!
+#720000
+00
+09
+0D
+0E
+04"
+0.!
+0/!
+05"
+#760000
+10
+1D
+1.!
+1/!
+#800000
+00
+0D
+0.!
+0/!
+#840000
+10
+1D
+1.!
+1/!
+#880000
+00
+0D
+0.!
+0/!
+#920000
+10
+1D
+1.!
+1/!
+#960000
+00
+0D
+0.!
+0/!
+#1000000

@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/part4_tmp_archive.qarlog
+
+Archive:	C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/part4_tmp_archive.qar
+Date:		Tue Nov 19 00:21:58 2019
+Quartus Prime		18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.1/debounce.vhd
+C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/de10HexDisplay.vhd
+C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/oneSecClock.vhd
+C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/part4.qpf
+C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/part4.qsf
+C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/part4.vhd
+c:/intelfpga_lite/18.1/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Nov 19 00:22:00 2019
+Source archive file:	C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.4/part4_tmp_archive.qar
+Archive was extracted into	C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 10/Lab10.5/
+		 - successfully.

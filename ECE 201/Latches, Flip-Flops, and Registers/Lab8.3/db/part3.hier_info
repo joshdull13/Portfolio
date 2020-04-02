@@ -1,0 +1,23 @@
+|part3
+Clk => gatedDlatch:GDLs.Clk
+Clk => gatedDlatch:GDLm.Clk
+D => gatedDlatch:GDLm.D
+Q << gatedDlatch:GDLs.Q
+
+
+|part3|gatedDlatch:GDLm
+Clk => R_g.IN0
+Clk => S_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|gatedDlatch:GDLs
+Clk => R_g.IN0
+Clk => S_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,21 @@
+library ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY part1 IS
+	PORT	(D, clk	: IN 	std_logic;
+			 Q, Qbar : OUT std_logic);
+END part1;
+
+ARCHITECTURE Behavior OF part1 IS
+	SIGNAL Qa, QaBar, R, S : std_logic;
+BEGIN
+	
+	R <= D NAND clk;
+	S <= (not D) NAND clk;
+	Qa <= R NAND QaBar;
+	QaBar <= S NAND Qa;
+	Q <= Qa;
+	Qbar <= QaBar;
+	
+END Behavior;

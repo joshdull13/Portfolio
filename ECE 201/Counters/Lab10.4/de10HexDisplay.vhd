@@ -1,0 +1,39 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+
+ENTITY de10HexDisplay IS
+	PORT (count 						: IN  integer;
+			HEX0, HEX1, HEX2, HEX3	: OUT STD_LOGIC_VECTOR(0 TO 6));	
+END de10HexDisplay;
+
+ARCHITECTURE Behavior OF de10HexDisplay IS
+	
+BEGIN
+	PROCESS (count)
+	BEGIN
+		
+		IF count = 0 THEN
+			HEX0 <= "0000001"; -- 0
+			HEX1 <= "1001111"; -- 1
+			HEX2 <= "0110000"; -- E
+			HEX3 <= "1000010"; -- d
+		ELSIF count = 1 THEN
+			HEX0 <= "1000010"; -- d
+			HEX1 <= "0000001"; -- 0
+			HEX2 <= "1001111"; -- 1
+			HEX3 <= "0110000"; -- E
+		ELSIF count = 2 THEN
+			HEX0 <= "0110000"; -- E
+			HEX1 <= "1000010"; -- d
+			HEX2 <= "0000001"; -- 0
+			HEX3 <= "1001111"; -- 1
+		ELSIF count = 3 THEN
+			HEX0 <= "1001111"; -- 1
+			HEX1 <= "0110000"; -- E
+			HEX2 <= "1000010"; -- d
+			HEX3 <= "0000001"; -- 0
+		
+		END IF;
+	END PROCESS;
+END Behavior;

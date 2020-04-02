@@ -1,0 +1,14 @@
+|part4
+D => negM.DATAIN
+D => posM.DATAIN
+D => Qa$latch.DATAIN
+Clk => negM.LATCH_ENABLE
+Clk => Qa$latch.LATCH_ENABLE
+Clk => Qb$latch.LATCH_ENABLE
+Clk => Qc$latch.LATCH_ENABLE
+Clk => posM.LATCH_ENABLE
+Qa <= Qa$latch.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb$latch.DB_MAX_OUTPUT_PORT_TYPE
+Qc <= Qc$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

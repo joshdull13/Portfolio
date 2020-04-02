@@ -1,0 +1,14 @@
+|part2
+SW[0] => part2b:p2.D
+SW[1] => part2b:p2.Clk
+LED << part2b:p2.Q
+
+
+|part2|part2b:p2
+Clk => R_g.IN0
+Clk => S_g.IN0
+D => S_g.IN1
+D => R_g.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

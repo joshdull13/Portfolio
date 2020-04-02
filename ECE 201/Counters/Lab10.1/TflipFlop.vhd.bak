@@ -1,0 +1,28 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+
+ENTITY TflipFlop IS
+	PORT ( 	En, Clk, Clear : IN STD_LOGIC;
+				Q : OUT STD_LOGIC);
+				
+END TflipFlop;
+
+ARCHITECTURE Behavior OF TflipFlop IS
+	SIGNAL posM : STD_LOGIC;
+BEGIN
+	
+	PROCESS (En, Clk, Clear)
+	BEGIN
+		IF Clear = '0' THEN
+			posM <= '0';
+		ELSE
+			IF Clk = '0' THEN
+				posM <= En;
+			ELSIF Clk = '1' THEN
+				Q <= posM;
+			END IF;
+		END IF;
+	END PROCESS;
+	
+END Behavior;

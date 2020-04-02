@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 8/Lab8.1/simulation/qsim
+Ehard_block
+Z1 w1572810748
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8part1.vho
+Z9 Fpart1.vho
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1572810749
+!i10b 1
+Z12 !s108 1572810749.000000
+Z13 !s90 -work|work|part1.vho|
+Z14 !s107 part1.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Epart1
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L88
+VlZZXA<MA`=b`T1_nZWVC=0
+!s100 4KlWRdGzmY7fO=`BnU8mG1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 5 part1 0 22 lZZXA<MA`=b`T1_nZWVC=0
+l140
+L104
+VKoQNDdaS9ih5YZSa2GAL>3
+!s100 7m`HQR7Koi2L9FTAU_oXW2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Epart1_vhd_vec_tst
+Z17 w1572810747
+R5
+R6
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+VE0LScVA>iR7Kz4Ki;hDPT1
+!s100 i81kEzGi]K[SYUb_DeNgQ2
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|Waveform.vwf.vht|
+Z21 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Apart1_arch
+R5
+R6
+Z22 DEx4 work 17 part1_vhd_vec_tst 0 22 E0LScVA>iR7Kz4Ki;hDPT1
+l48
+L33
+VHJ^7<6_PF0agzVOzJ==:U0
+!s100 LGZCg7HJ1<;3iASQ9cW;j0
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16

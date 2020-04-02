@@ -1,0 +1,44 @@
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+
+ENTITY part3 IS
+	PORT ( SW0, SW1, CLOCK_50 : IN STD_LOGIC;
+			 HEX0 : OUT STD_LOGIC_VECTOR(0 TO 6));	
+END part3;
+ARCHITECTURE Behavior OF part3 IS
+	COMPONENT debounce
+		PORT (clk, button : IN 	STD_LOGIC;
+				result		: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	SIGNAL En, Clear, slowEn 	: STD_LOGIC;
+	SIGNAL bigQ : unsigned(25 DOWNTO 0);
+	SIGNAL smallQ : unsigned(2 DOWNTO 0);
+BEGIN
+	CLKDB1 : debounce PORT MAP (CLOCK_50, SW0, Clear);	--SW(0) = clear
+	CLKDB2 : debounce PORT MAP (CLOCK_50, SW1, En);		--SW(1) = Enable / T
+	
+	PROCESS (CLOCK_50, Clear, slowEn)
+	BEGIN
+		IF Clear = '1' THEN
+			bigQ <= 0;
+			slowEn <= '0';
+			smallQ <= smallQ + 1;
+		ELSIF rising_edge(CLOCK_50) THEN
+			IF En = '1' AND bigQ < 50000000 THEN
+				bigQ <= bigQ + 1;
+				slowEn <= '0';
+			ELSIF bigQ = 50000000 THEN
+				bigQ <= 0;
+				slowEn <= '1';
+			END IF;
+		END IF;
+		
+		IF slowEn = '1' THEN
+			smallQ <= smallQ + 1;
+		END IF;
+			
+	END PROCESS;
+	
+END Behavior;

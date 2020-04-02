@@ -1,0 +1,96 @@
+|part2
+w => D[8].IN1
+w => D[7].IN0
+w => D[6].IN0
+w => D[5].IN1
+w => D[4].IN1
+w => D[3].IN1
+w => D[2].IN1
+w => D[1].IN1
+clk => DflipFlop:dff8.clk
+clk => DflipFlop:dff7.clk
+clk => DflipFlop:dff6.clk
+clk => DflipFlop:dff5.clk
+clk => DflipFlop:dff4.clk
+clk => DflipFlop:dff3.clk
+clk => DflipFlop:dff2.clk
+clk => DflipFlop:dff1.clk
+clk => DflipFlop:dff0.clk
+reset => DflipFlop:dff8.reset
+reset => D.IN1
+reset => D.IN0
+reset => DflipFlop:dff7.reset
+reset => DflipFlop:dff6.reset
+reset => DflipFlop:dff5.reset
+reset => DflipFlop:dff4.reset
+reset => DflipFlop:dff3.reset
+reset => DflipFlop:dff2.reset
+reset => DflipFlop:dff1.reset
+reset => DflipFlop:dff0.D
+reset => DflipFlop:dff0.reset
+z <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff8
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff7
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff6
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff5
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff4
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff3
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff2
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff1
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|DflipFlop:dff0
+D => Qa.DATAIN
+clk => Qa.CLK
+reset => Qa.ACLR
+Q <= Qa.DB_MAX_OUTPUT_PORT_TYPE
+
+

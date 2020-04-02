@@ -1,0 +1,578 @@
+|part5
+SW[0] => tempQA[0].DATAIN
+SW[0] => rippleAdder:RA.b[0]
+SW[0] => byteToHex7Seg:BtHb.byte[0]
+SW[1] => tempQA[1].DATAIN
+SW[1] => rippleAdder:RA.b[1]
+SW[1] => byteToHex7Seg:BtHb.byte[1]
+SW[2] => tempQA[2].DATAIN
+SW[2] => rippleAdder:RA.b[2]
+SW[2] => byteToHex7Seg:BtHb.byte[2]
+SW[3] => tempQA[3].DATAIN
+SW[3] => rippleAdder:RA.b[3]
+SW[3] => byteToHex7Seg:BtHb.byte[3]
+SW[4] => tempQA[4].DATAIN
+SW[4] => rippleAdder:RA.b[4]
+SW[4] => byteToHex7Seg:BtHb.byte[4]
+SW[5] => tempQA[5].DATAIN
+SW[5] => rippleAdder:RA.b[5]
+SW[5] => byteToHex7Seg:BtHb.byte[5]
+SW[6] => tempQA[6].DATAIN
+SW[6] => rippleAdder:RA.b[6]
+SW[6] => byteToHex7Seg:BtHb.byte[6]
+SW[7] => tempQA[7].DATAIN
+SW[7] => rippleAdder:RA.b[7]
+SW[7] => byteToHex7Seg:BtHb.byte[7]
+Clk => Qa[0].IN0
+Clk => tempQA[0].LATCH_ENABLE
+Clk => tempQA[1].LATCH_ENABLE
+Clk => tempQA[2].LATCH_ENABLE
+Clk => tempQA[3].LATCH_ENABLE
+Clk => tempQA[4].LATCH_ENABLE
+Clk => tempQA[5].LATCH_ENABLE
+Clk => tempQA[6].LATCH_ENABLE
+Clk => tempQA[7].LATCH_ENABLE
+Reset => Qa[0].IN1
+Reset => tempQA[0].ACLR
+Reset => tempQA[1].ACLR
+Reset => tempQA[2].ACLR
+Reset => tempQA[3].ACLR
+Reset => tempQA[4].ACLR
+Reset => tempQA[5].ACLR
+Reset => tempQA[6].ACLR
+Reset => tempQA[7].ACLR
+HEX0[6] <= byteToHex7Seg:BtHb.HEX0[6]
+HEX0[5] <= byteToHex7Seg:BtHb.HEX0[5]
+HEX0[4] <= byteToHex7Seg:BtHb.HEX0[4]
+HEX0[3] <= byteToHex7Seg:BtHb.HEX0[3]
+HEX0[2] <= byteToHex7Seg:BtHb.HEX0[2]
+HEX0[1] <= byteToHex7Seg:BtHb.HEX0[1]
+HEX0[0] <= byteToHex7Seg:BtHb.HEX0[0]
+HEX1[6] <= byteToHex7Seg:BtHb.HEX1[6]
+HEX1[5] <= byteToHex7Seg:BtHb.HEX1[5]
+HEX1[4] <= byteToHex7Seg:BtHb.HEX1[4]
+HEX1[3] <= byteToHex7Seg:BtHb.HEX1[3]
+HEX1[2] <= byteToHex7Seg:BtHb.HEX1[2]
+HEX1[1] <= byteToHex7Seg:BtHb.HEX1[1]
+HEX1[0] <= byteToHex7Seg:BtHb.HEX1[0]
+HEX2[6] <= byteToHex7Seg:BtHa.HEX0[6]
+HEX2[5] <= byteToHex7Seg:BtHa.HEX0[5]
+HEX2[4] <= byteToHex7Seg:BtHa.HEX0[4]
+HEX2[3] <= byteToHex7Seg:BtHa.HEX0[3]
+HEX2[2] <= byteToHex7Seg:BtHa.HEX0[2]
+HEX2[1] <= byteToHex7Seg:BtHa.HEX0[1]
+HEX2[0] <= byteToHex7Seg:BtHa.HEX0[0]
+HEX3[6] <= byteToHex7Seg:BtHa.HEX1[6]
+HEX3[5] <= byteToHex7Seg:BtHa.HEX1[5]
+HEX3[4] <= byteToHex7Seg:BtHa.HEX1[4]
+HEX3[3] <= byteToHex7Seg:BtHa.HEX1[3]
+HEX3[2] <= byteToHex7Seg:BtHa.HEX1[2]
+HEX3[1] <= byteToHex7Seg:BtHa.HEX1[1]
+HEX3[0] <= byteToHex7Seg:BtHa.HEX1[0]
+HEX4[6] <= byteToHex7Seg:BtHS.HEX0[6]
+HEX4[5] <= byteToHex7Seg:BtHS.HEX0[5]
+HEX4[4] <= byteToHex7Seg:BtHS.HEX0[4]
+HEX4[3] <= byteToHex7Seg:BtHS.HEX0[3]
+HEX4[2] <= byteToHex7Seg:BtHS.HEX0[2]
+HEX4[1] <= byteToHex7Seg:BtHS.HEX0[1]
+HEX4[0] <= byteToHex7Seg:BtHS.HEX0[0]
+HEX5[6] <= byteToHex7Seg:BtHS.HEX1[6]
+HEX5[5] <= byteToHex7Seg:BtHS.HEX1[5]
+HEX5[4] <= byteToHex7Seg:BtHS.HEX1[4]
+HEX5[3] <= byteToHex7Seg:BtHS.HEX1[3]
+HEX5[2] <= byteToHex7Seg:BtHS.HEX1[2]
+HEX5[1] <= byteToHex7Seg:BtHS.HEX1[1]
+HEX5[0] <= byteToHex7Seg:BtHS.HEX1[0]
+carryOut <= rippleAdder:RA.cOut
+
+
+|part5|rippleAdder:RA
+a[0] => fullAdder:FA0.a
+a[1] => fullAdder:FA1.a
+a[2] => fullAdder:FA2.a
+a[3] => fullAdder:FA3.a
+a[4] => fullAdder:FA4.a
+a[5] => fullAdder:FA5.a
+a[6] => fullAdder:FA6.a
+a[7] => fullAdder:FA7.a
+b[0] => fullAdder:FA0.b
+b[1] => fullAdder:FA1.b
+b[2] => fullAdder:FA2.b
+b[3] => fullAdder:FA3.b
+b[4] => fullAdder:FA4.b
+b[5] => fullAdder:FA5.b
+b[6] => fullAdder:FA6.b
+b[7] => fullAdder:FA7.b
+cIn => fullAdder:FA0.carryIn
+s[0] <= fullAdder:FA0.s
+s[1] <= fullAdder:FA1.s
+s[2] <= fullAdder:FA2.s
+s[3] <= fullAdder:FA3.s
+s[4] <= fullAdder:FA4.s
+s[5] <= fullAdder:FA5.s
+s[6] <= fullAdder:FA6.s
+s[7] <= fullAdder:FA7.s
+cOut <= fullAdder:FA7.carryOut
+
+
+|part5|rippleAdder:RA|fullAdder:FA0
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA1
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA2
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA3
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA4
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA5
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA6
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|rippleAdder:RA|fullAdder:FA7
+a => Sel.IN0
+b => Sel.IN1
+b => carryOut.IN1
+carryIn => s.IN1
+carryIn => carryOut.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= carryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|byteToHex7Seg:BtHb
+byte[0] => fourBitToHex7Seg:bth0.bits[0]
+byte[1] => fourBitToHex7Seg:bth0.bits[1]
+byte[2] => fourBitToHex7Seg:bth0.bits[2]
+byte[3] => fourBitToHex7Seg:bth0.bits[3]
+byte[4] => fourBitToHex7Seg:bth1.bits[0]
+byte[5] => fourBitToHex7Seg:bth1.bits[1]
+byte[6] => fourBitToHex7Seg:bth1.bits[2]
+byte[7] => fourBitToHex7Seg:bth1.bits[3]
+HEX0[6] <= fourBitToHex7Seg:bth0.HEX[6]
+HEX0[5] <= fourBitToHex7Seg:bth0.HEX[5]
+HEX0[4] <= fourBitToHex7Seg:bth0.HEX[4]
+HEX0[3] <= fourBitToHex7Seg:bth0.HEX[3]
+HEX0[2] <= fourBitToHex7Seg:bth0.HEX[2]
+HEX0[1] <= fourBitToHex7Seg:bth0.HEX[1]
+HEX0[0] <= fourBitToHex7Seg:bth0.HEX[0]
+HEX1[6] <= fourBitToHex7Seg:bth1.HEX[6]
+HEX1[5] <= fourBitToHex7Seg:bth1.HEX[5]
+HEX1[4] <= fourBitToHex7Seg:bth1.HEX[4]
+HEX1[3] <= fourBitToHex7Seg:bth1.HEX[3]
+HEX1[2] <= fourBitToHex7Seg:bth1.HEX[2]
+HEX1[1] <= fourBitToHex7Seg:bth1.HEX[1]
+HEX1[0] <= fourBitToHex7Seg:bth1.HEX[0]
+
+
+|part5|byteToHex7Seg:BtHb|fourBitToHex7Seg:bth0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|byteToHex7Seg:BtHb|fourBitToHex7Seg:bth1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|byteToHex7Seg:BtHa
+byte[0] => fourBitToHex7Seg:bth0.bits[0]
+byte[1] => fourBitToHex7Seg:bth0.bits[1]
+byte[2] => fourBitToHex7Seg:bth0.bits[2]
+byte[3] => fourBitToHex7Seg:bth0.bits[3]
+byte[4] => fourBitToHex7Seg:bth1.bits[0]
+byte[5] => fourBitToHex7Seg:bth1.bits[1]
+byte[6] => fourBitToHex7Seg:bth1.bits[2]
+byte[7] => fourBitToHex7Seg:bth1.bits[3]
+HEX0[6] <= fourBitToHex7Seg:bth0.HEX[6]
+HEX0[5] <= fourBitToHex7Seg:bth0.HEX[5]
+HEX0[4] <= fourBitToHex7Seg:bth0.HEX[4]
+HEX0[3] <= fourBitToHex7Seg:bth0.HEX[3]
+HEX0[2] <= fourBitToHex7Seg:bth0.HEX[2]
+HEX0[1] <= fourBitToHex7Seg:bth0.HEX[1]
+HEX0[0] <= fourBitToHex7Seg:bth0.HEX[0]
+HEX1[6] <= fourBitToHex7Seg:bth1.HEX[6]
+HEX1[5] <= fourBitToHex7Seg:bth1.HEX[5]
+HEX1[4] <= fourBitToHex7Seg:bth1.HEX[4]
+HEX1[3] <= fourBitToHex7Seg:bth1.HEX[3]
+HEX1[2] <= fourBitToHex7Seg:bth1.HEX[2]
+HEX1[1] <= fourBitToHex7Seg:bth1.HEX[1]
+HEX1[0] <= fourBitToHex7Seg:bth1.HEX[0]
+
+
+|part5|byteToHex7Seg:BtHa|fourBitToHex7Seg:bth0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|byteToHex7Seg:BtHa|fourBitToHex7Seg:bth1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|byteToHex7Seg:BtHS
+byte[0] => fourBitToHex7Seg:bth0.bits[0]
+byte[1] => fourBitToHex7Seg:bth0.bits[1]
+byte[2] => fourBitToHex7Seg:bth0.bits[2]
+byte[3] => fourBitToHex7Seg:bth0.bits[3]
+byte[4] => fourBitToHex7Seg:bth1.bits[0]
+byte[5] => fourBitToHex7Seg:bth1.bits[1]
+byte[6] => fourBitToHex7Seg:bth1.bits[2]
+byte[7] => fourBitToHex7Seg:bth1.bits[3]
+HEX0[6] <= fourBitToHex7Seg:bth0.HEX[6]
+HEX0[5] <= fourBitToHex7Seg:bth0.HEX[5]
+HEX0[4] <= fourBitToHex7Seg:bth0.HEX[4]
+HEX0[3] <= fourBitToHex7Seg:bth0.HEX[3]
+HEX0[2] <= fourBitToHex7Seg:bth0.HEX[2]
+HEX0[1] <= fourBitToHex7Seg:bth0.HEX[1]
+HEX0[0] <= fourBitToHex7Seg:bth0.HEX[0]
+HEX1[6] <= fourBitToHex7Seg:bth1.HEX[6]
+HEX1[5] <= fourBitToHex7Seg:bth1.HEX[5]
+HEX1[4] <= fourBitToHex7Seg:bth1.HEX[4]
+HEX1[3] <= fourBitToHex7Seg:bth1.HEX[3]
+HEX1[2] <= fourBitToHex7Seg:bth1.HEX[2]
+HEX1[1] <= fourBitToHex7Seg:bth1.HEX[1]
+HEX1[0] <= fourBitToHex7Seg:bth1.HEX[0]
+
+
+|part5|byteToHex7Seg:BtHS|fourBitToHex7Seg:bth0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|byteToHex7Seg:BtHS|fourBitToHex7Seg:bth1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN0
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[0] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN1
+bits[1] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[2] => HEX.IN0
+bits[2] => HEX.IN0
+bits[2] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+bits[3] => HEX.IN1
+HEX[6] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+HEX[0] <= HEX.DB_MAX_OUTPUT_PORT_TYPE
+
+

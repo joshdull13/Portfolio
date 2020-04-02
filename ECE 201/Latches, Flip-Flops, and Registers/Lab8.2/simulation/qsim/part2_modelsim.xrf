@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 8/Lab8.2/part2.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/joshd/Desktop/Docs/School/ECE 201/Labs/Lab 8/Lab8.2/db/part2.cbx.xml
+design_name = hard_block
+design_name = part2
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, part2, 1
+instance = comp, \Q~output\, Q~output, part2, 1
+instance = comp, \Clk~input\, Clk~input, part2, 1
+instance = comp, \D~input\, D~input, part2, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, part2, 1
+instance = comp, \~QUARTUS_CREATED_ADC1~\, ~QUARTUS_CREATED_ADC1~, part2, 1
+instance = comp, \~QUARTUS_CREATED_ADC2~\, ~QUARTUS_CREATED_ADC2~, part2, 1
