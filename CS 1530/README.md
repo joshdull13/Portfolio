@@ -1,14 +1,14 @@
 # Horse Pedigree Program
 
-Program was developed in CS1530 Fall 2019 section by Group 11: 
-Daniel Cohen, Peter O'Hara, Matt Tutsock, Josh Dullinger, and Ryan Lynch
+* Program was developed in CS1530 Fall 2019 section by Group 11:
+* Daniel Cohen, Peter O'Hara, Matt Tutsock, Josh Dullinger, and Ryan Lynch
 
 ## Launching
 
-To launch:
-	Unzip file to get .jar
-	run: java -jar HorsePedigreeApplication-0.1.0.jar in cmd
-	connect to localhost:8080 in browser
+1. To launch:
+	1. Unzip file to get .jar
+	1. run: java -jar HorsePedigreeApplication-0.1.0.jar in cmd
+	1. connect to localhost:8080 in browser
 	
 ### Functions
 
