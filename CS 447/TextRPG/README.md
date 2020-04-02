@@ -1,3 +1,9 @@
+# Text Adventure RPG
+
+	This program is a project for CS 447. The task was to design a text based choose your own adventure RPG using assembly.
+
+## Game info
+
 Constants:
 	I used constants to save all characters stats
 	
@@ -24,12 +30,12 @@ Player and Enemy Atributes:
 Registers Used / Meanings:
 
 	$t0 - character choice			$s0 - Time / RNG seed
-	$t1 - path choice				$s1 - Random Number / Weapon DMG Roll
-	$t2 - Player HP					$s2 - Battle (loop) counter
-	$t3 - Player STR				$s3 - Total DMG
+	$t1 - path choice			$s1 - Random Number / Weapon DMG Roll
+	$t2 - Player HP				$s2 - Battle (loop) counter
+	$t3 - Player STR			$s3 - Total DMG
 	$t4 - Player Minimum DMG		$s4 - Game Over Condition (1 = over)
 	$t5 - Player Maximum DMG		$s5 - item number choice / spell randomly generated correct number
-	$t6 - Enemy HP					$s6 - Player wizard fight action choice 
-	$t7 - Enemy STR					$s7 - Player Spell number guess
+	$t6 - Enemy HP				$s6 - Player wizard fight action choice 
+	$t7 - Enemy STR				$s7 - Player Spell number guess
 	$t8 - Enemy Minimum DMG	
 	$t9 - Enemy Maximum DMG									
